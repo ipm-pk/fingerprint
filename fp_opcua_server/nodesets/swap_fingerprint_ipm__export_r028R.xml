@@ -1,0 +1,824 @@
+<ns0:UANodeSet xmlns:ns0="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:ns1="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:ns2="http://opcfoundation.org/UA/2008/02/Types.xsd" LastModified="2024-06-29T15:37:29.877Z">
+    <ns0:NamespaceUris>
+        <ns0:Uri>http://common.swap.fraunhofer.de</ns0:Uri>
+        <ns0:Uri>http://fingerprint.swap.ipm.fraunhofer.de</ns0:Uri>
+    </ns0:NamespaceUris>
+    <ns0:Models>
+        <ns0:Model ModelUri="http://fingerprint.swap.ipm.fraunhofer.de" PublicationDate="2023-10-02T00:00:00Z" Version="1.00">
+            <ns0:RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2021-09-15T00:00:00Z" Version="1.04.10" />
+            <ns0:RequiredModel ModelUri="http://common.swap.fraunhofer.de" PublicationDate="2021-09-22T00:00:00Z" Version="1.00" />
+        </ns0:Model>
+    </ns0:Models>
+    <ns0:Aliases>
+        <ns0:Alias Alias="Boolean">i=1</ns0:Alias>
+        <ns0:Alias Alias="SByte">i=2</ns0:Alias>
+        <ns0:Alias Alias="Int16">i=4</ns0:Alias>
+        <ns0:Alias Alias="Float">i=10</ns0:Alias>
+        <ns0:Alias Alias="DateTime">i=13</ns0:Alias>
+        <ns0:Alias Alias="String">i=12</ns0:Alias>
+        <ns0:Alias Alias="HasComponent">i=47</ns0:Alias>
+        <ns0:Alias Alias="HasProperty">i=46</ns0:Alias>
+        <ns0:Alias Alias="Organizes">i=35</ns0:Alias>
+        <ns0:Alias Alias="HasSubtype">i=45</ns0:Alias>
+        <ns0:Alias Alias="HasTypeDefinition">i=40</ns0:Alias>
+        <ns0:Alias Alias="HasModellingRule">i=37</ns0:Alias>
+    </ns0:Aliases>
+    <ns0:Extensions>
+        <ns0:Extension>
+            <ns1:Generator Product="SiOME" Edition="Standard" Version="2.5.12" />
+        </ns0:Extension>
+        <ns0:Extension>
+            <ns1:GeneratorExtension Hash="acbe63595ad651543c4c540accf83842" />
+        </ns0:Extension>
+    </ns0:Extensions>
+    <ns0:UAObject SymbolicName="http___fingerprint_swap_ipm_fraunhofer_de" NodeId="ns=2;i=5000" BrowseName="2:http://fingerprint.swap.ipm.fraunhofer.de" ParentNodeId="i=11715">
+        <ns0:DisplayName>http://fingerprint.swap.ipm.fraunhofer.de</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">i=11715</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=11616</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObject>
+    <ns0:UAVariable DataType="Boolean" NodeId="ns=2;i=6000" BrowseName="IsNamespaceSubset" ParentNodeId="ns=2;i=5000">
+        <ns0:DisplayName>IsNamespaceSubset</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="DateTime" NodeId="ns=2;i=6001" BrowseName="NamespacePublicationDate" ParentNodeId="ns=2;i=5000">
+        <ns0:DisplayName>NamespacePublicationDate</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+        </ns0:References>
+        <ns0:Value>
+            <ns2:DateTime>2023-10-02T00:00:00Z</ns2:DateTime>
+        </ns0:Value>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="String" NodeId="ns=2;i=6002" BrowseName="NamespaceUri" ParentNodeId="ns=2;i=5000">
+        <ns0:DisplayName>NamespaceUri</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+        </ns0:References>
+        <ns0:Value>
+            <ns2:String>http://fingerprint.swap.ipm.fraunhofer.de</ns2:String>
+        </ns0:Value>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="String" NodeId="ns=2;i=6003" BrowseName="NamespaceVersion" ParentNodeId="ns=2;i=5000">
+        <ns0:DisplayName>NamespaceVersion</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+        </ns0:References>
+        <ns0:Value>
+            <ns2:String>1.00</ns2:String>
+        </ns0:Value>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="i=256" ValueRank="1" NodeId="ns=2;i=6004" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=2;i=5000">
+        <ns0:DisplayName>StaticNodeIdTypes</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="i=291" ValueRank="1" NodeId="ns=2;i=6005" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=2;i=5000">
+        <ns0:DisplayName>StaticNumericNodeIdRange</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="String" NodeId="ns=2;i=6006" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=2;i=5000">
+        <ns0:DisplayName>StaticStringNodeIdPattern</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="i=96" ValueRank="1" NodeId="ns=2;i=6007" BrowseName="DefaultRolePermissions" ParentNodeId="ns=2;i=5000">
+        <ns0:DisplayName>DefaultRolePermissions</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAObjectType NodeId="ns=2;i=1000" BrowseName="2:FingerprintModuleType">
+        <ns0:DisplayName>FingerprintModuleType</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1001</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObjectType>
+    <ns0:UAObject NodeId="ns=2;i=5009" BrowseName="1:Capabilities" ParentNodeId="ns=2;i=1000">
+        <ns0:DisplayName>Capabilities</ns0:DisplayName>
+        <ns0:Description>The capabilities are used to determin specific constraints or characteristics of an concrete asset. During the concrete asset selection the capabilities may contrain the amount of possible assets for the requested serice. The capabilites are most often static and should not change during runtime. Example: Transport vehical may implement the service "transport". A possible capabilite could be the maximum transport weight, which depends on the concrete transport system.</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="Organizes" IsForward="false">ns=2;i=1000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=58</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObject>
+    <ns0:UAVariable DataType="String" NodeId="ns=2;i=6027" BrowseName="2:LightingType" ParentNodeId="ns=2;i=5009" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>LightingType</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5009</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="Int16" NodeId="ns=2;i=6028" BrowseName="2:MaxLightingTime" ParentNodeId="ns=2;i=5009" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>MaxLightingTime</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5009</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="Int16" NodeId="ns=2;i=6029" BrowseName="2:MinRecoverTime" ParentNodeId="ns=2;i=5009" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>MinRecoverTime</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5009</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="Int16" ValueRank="1" NodeId="ns=2;i=6030" ArrayDimensions="2" BrowseName="2:Resolution" ParentNodeId="ns=2;i=5009" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>Resolution</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5009</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="Float" ValueRank="1" NodeId="ns=2;i=6031" ArrayDimensions="2" BrowseName="2:ResolutionMPP" ParentNodeId="ns=2;i=5009" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>ResolutionMPP</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5009</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="Float" NodeId="ns=2;i=6032" BrowseName="2:Weight" ParentNodeId="ns=2;i=5009" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>Weight</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5009</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAObject NodeId="ns=2;i=5010" BrowseName="1:Properties" ParentNodeId="ns=2;i=1000">
+        <ns0:DisplayName>Properties</ns0:DisplayName>
+        <ns0:Description>Properties are (mostly) static or slow changings attributes of the asset. Common properties are for example static attributes like the vendor name or slow changing values like the general battery-health.</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="Organizes" IsForward="false">ns=2;i=1000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=58</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObject>
+    <ns0:UAVariable DataType="Int16" NodeId="ns=2;i=6033" BrowseName="2:FocusDistance" ParentNodeId="ns=2;i=5010" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>FocusDistance</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5010</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="String" NodeId="ns=2;i=6034" BrowseName="2:Manufacturer" ParentNodeId="ns=2;i=5010" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>Manufacturer</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5010</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAObject NodeId="ns=2;i=5011" BrowseName="1:Services" ParentNodeId="ns=2;i=1000">
+        <ns0:DisplayName>Services</ns0:DisplayName>
+        <ns0:Description>The services are the asset-class unified interface to the functionality of the asset.</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="Organizes" IsForward="false">ns=2;i=1000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=58</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObject>
+    <ns0:UAMethod NodeId="ns=2;i=7002" BrowseName="2:AddPart" ParentNodeId="ns=2;i=5011">
+        <ns0:DisplayName>AddPart</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5011</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAMethod>
+    <ns0:UAVariable DataType="i=296" ValueRank="1" NodeId="ns=2;i=6035" ArrayDimensions="6" BrowseName="InputArguments" ParentNodeId="ns=2;i=7002">
+        <ns0:DisplayName>InputArguments</ns0:DisplayName>
+        <ns0:Description>the definition of the input argument of method 1:Services.2:AddPart</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=7002</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+        <ns0:Value>
+            <ns2:ListOfExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>DatabaseName</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=12</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>The database to store the part ID and FP.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>CheckIDDuplicates</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=1</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>Before adding the new part ID to the database, check whether the ID already is in the database.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>CheckFPDuplicates</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=1</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>Before adding the new part's FP to the database, check whether the FP already is in the database.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>PartID</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=12</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>A user-defined ID for the part which will be returned when identifying via TracePart.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>BatchID</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=12</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>A user-defined batch ID can be assigned to subdivide the part entries in a database.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>PartType</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=12</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>A user-defined part type can be assigned to subdivide the part entries in a database.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+            </ns2:ListOfExtensionObject>
+        </ns0:Value>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="i=296" ValueRank="1" NodeId="ns=2;i=6036" ArrayDimensions="1" BrowseName="OutputArguments" ParentNodeId="ns=2;i=7002">
+        <ns0:DisplayName>OutputArguments</ns0:DisplayName>
+        <ns0:Description>the definition of the output arguments of method 1:Services.2:AddPart</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=7002</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+        <ns0:Value>
+            <ns2:ListOfExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>ServiceResponse</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>ns=1;i=3006</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>A structure containing the immediate service response.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+            </ns2:ListOfExtensionObject>
+        </ns0:Value>
+    </ns0:UAVariable>
+    <ns0:UAMethod NodeId="ns=2;i=7003" BrowseName="2:TracePart" ParentNodeId="ns=2;i=5011">
+        <ns0:DisplayName>TracePart</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5011</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAMethod>
+    <ns0:UAVariable DataType="i=296" ValueRank="1" NodeId="ns=2;i=6037" ArrayDimensions="7" BrowseName="InputArguments" ParentNodeId="ns=2;i=7003">
+        <ns0:DisplayName>InputArguments</ns0:DisplayName>
+        <ns0:Description>the definition of the input argument of method 1:Services.2:TracePart</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=7003</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+        <ns0:Value>
+            <ns2:ListOfExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>DatabaseName</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=12</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>Database to move the part entry to after successful identification.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>ReferenceDatabaseNames</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=12</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>The database(s) in which to search for the FP. (Names separated by semicolons).</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>TraceAllDatabases</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=1</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>If FP is not found in the reference databases, search in all existing databases (time consuming).</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>BatchIDs</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=12</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>The Batches for which the comparison shall be executed. (IDs separated by semicolons.)</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>TraceBatchwise</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=1</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>Compare only parts that exhibit one of the assigned batch IDs.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>PartType</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=12</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>The part types for which the comparison shall be executed. (Names separated by semicolons.)</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>TraceTypewise</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=1</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>Compare only parts that exhibit one of the assigned batch part types.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+            </ns2:ListOfExtensionObject>
+        </ns0:Value>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="i=296" ValueRank="1" NodeId="ns=2;i=6038" ArrayDimensions="1" BrowseName="OutputArguments" ParentNodeId="ns=2;i=7003">
+        <ns0:DisplayName>OutputArguments</ns0:DisplayName>
+        <ns0:Description>the definition of the output arguments of method 1:Services.2:TracePart</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=7003</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+        <ns0:Value>
+            <ns2:ListOfExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>ServiceResponse</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>ns=1;i=3006</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>A structure containing the immediate service response.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+            </ns2:ListOfExtensionObject>
+        </ns0:Value>
+    </ns0:UAVariable>
+    <ns0:UAObject NodeId="ns=2;i=5012" BrowseName="1:State" ParentNodeId="ns=2;i=1000">
+        <ns0:DisplayName>State</ns0:DisplayName>
+        <ns0:Description>The state contains all dynamic and therefore often fast changing asset parameters. Beside some general state-information like error and ready there could be also e.g. the current battery-charge shown in as one of the state parameters.</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="Organizes" IsForward="false">ns=2;i=1000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=58</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObject>
+    <ns0:UAVariable DataType="String" NodeId="ns=2;i=6039" BrowseName="2:CurrentCommand" ParentNodeId="ns=2;i=5012" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>CurrentCommand</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5012</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="SByte" NodeId="ns=2;i=6040" BrowseName="2:RunState" ParentNodeId="ns=2;i=5012" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>RunState</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5012</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="SByte" NodeId="ns=2;i=6041" BrowseName="2:ResultState" ParentNodeId="ns=2;i=5012" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>ResultState</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5012</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="SByte" NodeId="ns=2;i=6042" BrowseName="2:ErrorType" ParentNodeId="ns=2;i=5012" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>ErrorType</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5012</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAMethod NodeId="ns=2;i=7004" BrowseName="1:register" ParentNodeId="ns=2;i=5011">
+        <ns0:DisplayName>register</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5011</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+    </ns0:UAMethod>
+    <ns0:UAMethod NodeId="ns=2;i=7005" BrowseName="1:unregister" ParentNodeId="ns=2;i=5011">
+        <ns0:DisplayName>unregister</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5011</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+    </ns0:UAMethod>
+    <ns0:UAVariable DataType="Boolean" NodeId="ns=2;i=6045" BrowseName="1:Stationary" ParentNodeId="ns=2;i=5010" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>Stationary</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5010</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAObject NodeId="ns=2;i=5015" BrowseName="1:Asset" ParentNodeId="ns=2;i=5010">
+        <ns0:DisplayName>Asset</ns0:DisplayName>
+        <ns0:Description>Asset specific properties.</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="Organizes" IsForward="false">ns=2;i=5010</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=58</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObject>
+    <ns0:UAObject NodeId="ns=2;i=5016" BrowseName="1:AssetClass" ParentNodeId="ns=2;i=5010">
+        <ns0:DisplayName>AssetClass</ns0:DisplayName>
+        <ns0:Description>AssetClass specific properties (shoueld be equal for all agents within the module).</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="Organizes" IsForward="false">ns=2;i=5010</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=58</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObject>
+    <ns0:UAObjectType NodeId="ns=2;i=1004" BrowseName="2:AddPartServiceFinishedEventType">
+        <ns0:DisplayName>AddPartServiceFinishedEventType</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1000</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObjectType>
+    <ns0:UAObjectType NodeId="ns=2;i=1005" BrowseName="2:TracePartServiceFinishedEventType">
+        <ns0:DisplayName>TracePartServiceFinishedEventType</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1000</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObjectType>
+    <ns0:UAMethod NodeId="ns=2;i=7000" BrowseName="2:ResetSystem" ParentNodeId="ns=2;i=5011">
+        <ns0:DisplayName>ResetSystem</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5011</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAMethod>
+    <ns0:UAVariable DataType="i=296" ValueRank="1" NodeId="ns=2;i=6008" BrowseName="InputArguments" ParentNodeId="ns=2;i=7000">
+        <ns0:DisplayName>InputArguments</ns0:DisplayName>
+        <ns0:Description>the definition of the input argument of method 1:Services.2:ResetSystem</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=7000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="i=296" ValueRank="1" NodeId="ns=2;i=6009" ArrayDimensions="1" BrowseName="OutputArguments" ParentNodeId="ns=2;i=7000">
+        <ns0:DisplayName>OutputArguments</ns0:DisplayName>
+        <ns0:Description>the definition of the output arguments of method 1:Services.2:ResetSystem</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=7000</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+        <ns0:Value>
+            <ns2:ListOfExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>ServiceResponse</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>ns=1;i=3006</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>A structure containing the immediate service response.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+            </ns2:ListOfExtensionObject>
+        </ns0:Value>
+    </ns0:UAVariable>
+    <ns0:UAMethod NodeId="ns=2;i=7001" BrowseName="2:SetImageMatchingType" ParentNodeId="ns=2;i=5011">
+        <ns0:DisplayName>SetImageMatchingType</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=5011</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAMethod>
+    <ns0:UAVariable DataType="i=296" ValueRank="1" NodeId="ns=2;i=6010" ArrayDimensions="1" BrowseName="InputArguments" ParentNodeId="ns=2;i=7001">
+        <ns0:DisplayName>InputArguments</ns0:DisplayName>
+        <ns0:Description>the definition of the input argument of method 1:Services.2:SetImageMatchingType</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=7001</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+        <ns0:Value>
+            <ns2:ListOfExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>ImageMatchingType</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>i=12</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>The configuration that is used for image processing and FP creation.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+            </ns2:ListOfExtensionObject>
+        </ns0:Value>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="i=296" ValueRank="1" NodeId="ns=2;i=6011" ArrayDimensions="1" BrowseName="OutputArguments" ParentNodeId="ns=2;i=7001">
+        <ns0:DisplayName>OutputArguments</ns0:DisplayName>
+        <ns0:Description>the definition of the output arguments of method 1:Services.2:SetImageMatchingType</ns0:Description>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=7001</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=68</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=78</ns0:Reference>
+        </ns0:References>
+        <ns0:Value>
+            <ns2:ListOfExtensionObject>
+                <ns2:ExtensionObject>
+                    <ns2:TypeId>
+                        <ns2:Identifier>i=297</ns2:Identifier>
+                    </ns2:TypeId>
+                    <ns2:Body>
+                        <ns2:Argument>
+                            <ns2:Name>ServiceResponse</ns2:Name>
+                            <ns2:DataType>
+                                <ns2:Identifier>ns=1;i=3006</ns2:Identifier>
+                            </ns2:DataType>
+                            <ns2:ValueRank>-1</ns2:ValueRank>
+                            <ns2:ArrayDimensions />
+                            <ns2:Description>
+                                <ns2:Text>A structure containing the immediate service response.</ns2:Text>
+                            </ns2:Description>
+                        </ns2:Argument>
+                    </ns2:Body>
+                </ns2:ExtensionObject>
+            </ns2:ListOfExtensionObject>
+        </ns0:Value>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="String" NodeId="ns=2;i=6012" BrowseName="2:PartIDsOfDuplicates" ParentNodeId="ns=2;i=1004" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>PartIDsOfDuplicates</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1004</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="String" NodeId="ns=2;i=6013" BrowseName="2:PartID" ParentNodeId="ns=2;i=1005" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>PartID</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1005</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="String" NodeId="ns=2;i=6014" BrowseName="2:BatchID" ParentNodeId="ns=2;i=1005" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>BatchID</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1005</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="String" NodeId="ns=2;i=6015" BrowseName="2:PartType" ParentNodeId="ns=2;i=1005" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>PartType</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1005</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="Int16" NodeId="ns=2;i=6016" BrowseName="2:CurrentConfidenceValue1" ParentNodeId="ns=2;i=1005" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>CurrentConfidenceValue1</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1005</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="Int16" NodeId="ns=2;i=6017" BrowseName="2:CurrentConfidenceValue2" ParentNodeId="ns=2;i=1005" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>CurrentConfidenceValue2</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1005</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="Int16" NodeId="ns=2;i=6018" BrowseName="2:AverageConfidenceValue1" ParentNodeId="ns=2;i=1005" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>AverageConfidenceValue1</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1005</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAVariable DataType="Int16" NodeId="ns=2;i=6019" BrowseName="2:AverageConfidenceValue2" ParentNodeId="ns=2;i=1005" UserAccessLevel="3" AccessLevel="3">
+        <ns0:DisplayName>AverageConfidenceValue2</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1005</ns0:Reference>
+            <ns0:Reference ReferenceType="HasTypeDefinition">i=63</ns0:Reference>
+            <ns0:Reference ReferenceType="HasModellingRule">i=80</ns0:Reference>
+        </ns0:References>
+    </ns0:UAVariable>
+    <ns0:UAObjectType NodeId="ns=2;i=1001" BrowseName="2:ResetSystemServiceFinishedEventType">
+        <ns0:DisplayName>ResetSystemServiceFinishedEventType</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1000</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObjectType>
+    <ns0:UAObjectType NodeId="ns=2;i=1002" BrowseName="2:SetImageMatchingTypeServiceFinishedEventType">
+        <ns0:DisplayName>SetImageMatchingTypeServiceFinishedEventType</ns0:DisplayName>
+        <ns0:References>
+            <ns0:Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1000</ns0:Reference>
+        </ns0:References>
+    </ns0:UAObjectType>
+</ns0:UANodeSet>
