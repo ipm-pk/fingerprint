@@ -7,7 +7,7 @@ In this repository, an OPC UA interface for Fingerprint systems is provided. Two
 
 The OPC UA interface has been implemented according to the SWAP IT architecture. Thus, a SWAP IT production automation system can integrate the Fingerprint sensor module dynamically into a production flow.
 
-## Install
+## Installation & Usage
 1. Download all files from the repository.
 1. Install python >=3.10.
 1. Install the required packages in requirements.txt.
@@ -20,3 +20,8 @@ The OPC UA interface has been implemented according to the SWAP IT architecture.
 set up a custom client solution, e. g. on a PLC, <br>
 or let a SWAP IT client control the Fingerprint sensor system.
 
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ipm-pk/fingerprint/blob/main/LICENSE) file for details.
+
+## Authors / Maintainers
+(jrscr)[https://github.com/jrscr]
