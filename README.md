@@ -21,7 +21,7 @@ set up a custom client solution, e. g. on a PLC, <br>
 or let a SWAP IT client control the Fingerprint sensor system.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ipm-pk/fingerprint/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ipm-pk/fingerprint/blob/main/LICENSE) file for details.
 
 ## Authors / Maintainers
-(jrscr)[https://github.com/jrscr]
+[jrscr](https://github.com/jrscr)
